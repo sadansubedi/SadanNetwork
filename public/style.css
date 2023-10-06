@@ -1,0 +1,59 @@
+.dark-theme{
+    background-color: black;
+    color: white;
+   
+}
+.dark-theme .navbar{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+   
+}
+.dark-theme .navbar span{
+    color:aliceblue;/*to change Sadan Network color while dark mode*/
+}
+.dark-theme .navbar .navbarleft .navbarsearch input {
+    border: none;
+    width: 500px;
+    color: white;
+    background: black;
+    border: none;
+    /* text-decoration: none; */
+    outline: none;
+    font-size: 20px;
+}
+.dark-theme .user-right .userinfo > span {
+     color: white;/* changing color of jhon lenon of suggestion for you and Online Friends section  */
+}
+.dark-theme .rightBar .user-right .userinfo p > span {
+    color: white; /*changing color of jhon lenon of Latest activities section  */
+}
+
+.light-theme{
+    background-color: whitesmoke;
+    color: dark;
+    border: lightgray;
+    
+}
+
+
+
+
+.dark-theme .home .posts .post {
+    background-color: rgb(21, 21, 21);
+    color: white;
+
+}
+/* we did below code in profile.css 
+.dark-theme .profile .profilecontainer .uInfo{
+    background-color: rgb(21, 21, 21);
+    color: white;
+
+} */
+/* 
+.dark-theme .profile .profilecontainer .posts{
+    background-color: rgb(21, 21, 21);
+    color: white;
+
+}  */

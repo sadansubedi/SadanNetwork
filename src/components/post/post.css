@@ -1,0 +1,60 @@
+.post{
+    -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    background-color: rgb(245, 240, 240);
+    /* color: ; */
+}
+.post .post-container{
+    padding: 20px;
+}
+.post .post-container .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post .post-container .user .userinfo_post{
+    display: flex;
+    gap: 20px;
+}
+.post .post-container .user .userinfo_post img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post .post-container .user .userinfo_post .details{
+    display: flex;
+    flex-direction: column;
+}
+
+.post .post-container .user .userinfo_post .details .name{
+    font-weight: 500;
+}
+
+.post .post-container .user .userinfo_post .details .date{
+    font-size: 12px;
+}
+
+.post .post-container .content{
+    margin: 20px 0px;
+}
+.post .post-container .content img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    margin-top:20px ;
+}
+.post .post-container .postinfo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.post .post-container  .postinfo .item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}

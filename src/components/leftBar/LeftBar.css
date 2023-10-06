@@ -1,0 +1,51 @@
+.leftbar{
+    padding: 20px;
+    width: 20%;
+    position: sticky;
+     top: 70px;/*navbar height =10 up down as padding and height 50 so from top 70 px away */
+     height: calc(100vh - 70px);/*so area of leftbar is 100vh -70px */
+    overflow: scroll;
+    z-index: 1;
+
+    &::-webkit-scrollbar{/*to prevent scrollbar */
+        display: none;
+    }
+}
+hr{
+    margin: 20px 0px;
+    border: none;
+    height: 0.5px;
+    background-color: lightgray;
+}
+.leftbar .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbar .menu > span{
+    font-size: 16px;
+} 
+.leftbar .menu .leftbaruser{
+    display:flex;
+    align-items: center;
+}
+.leftbar .menu .leftbaruser img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 5px;
+}
+.leftbar .menu .item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.leftbar .menu .item img{
+    width: 30px;
+    height: 30px;
+}
+.leftbar .menu .item span{
+    font-size: 18px;
+}

@@ -1,0 +1,78 @@
+.rightBar{
+    width: 30%;
+    position: sticky;
+    top: 70px;/*navbar height =10 up down as padding and height 50 so from top 70 px away */
+    height: calc(100vh - 70px);/*so area of leftbar is 100vh -70px */
+   overflow: scroll;
+   z-index: 1;
+
+   &::-webkit-scrollbar{/*to prevent scrollbar */
+       display: none;
+   } 
+}
+.rightBar .container-right{
+    padding: 20px;
+}
+.rightBar .container-right .item-right{
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    padding: 20px 14px;
+    margin-bottom: 20px;
+}
+.rightBar .item-right span{
+    color: gray;
+}
+.rightBar .user-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     margin: 20px 0px;
+}
+
+.rightBar .user-right .userinfo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+
+}
+.rightBar .user-right .userinfo .online{ /*here to give online notation thus we can see green dot at top right part of image*/
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: limegreen;
+    position: absolute;
+    top: 0;
+    left: 25px;
+}
+.rightBar .userinfo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user-right ,.userinfo p{
+    color: grey;
+}
+.rightBar .userinfo span{
+    font-weight: 500;
+    color: black;
+}
+.user-right .buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user-right .buttons button{
+    border: none;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    &:first-child{
+        background-color: #5271ff;
+    }
+    &:last-child{
+        background-color: red;
+    }
+}   
